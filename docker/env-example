@@ -14,7 +14,7 @@ APP_CODE_PATH_CONTAINER=/var/www
 APP_CODE_CONTAINER_FLAG=:cached
 
 # Choose storage path on your machine. For all storage systems
-DATA_PATH_HOST=~/.laradock/data
+DATA_PATH_HOST=~/.laravel_weather/data
 
 ### Drivers ################################################
 
@@ -33,7 +33,7 @@ COMPOSE_FILE=docker-compose.yml
 COMPOSE_PATH_SEPARATOR=:
 
 # Define the prefix of container names. This is useful if you have multiple projects that use laradock to have seperate containers per project.
-COMPOSE_PROJECT_NAME=laradock
+COMPOSE_PROJECT_NAME=LaravelWeather
 
 ### PHP Version ###########################################
 
@@ -58,7 +58,7 @@ DOCKER_HOST_IP=10.0.75.1
 ### Remote Interpreter ####################################
 
 # Choose a Remote Interpreter entry matching name. Default is `laradock`
-PHP_IDE_CONFIG=serverName=laradock
+PHP_IDE_CONFIG=serverName=laravelWeather
 
 ### Windows Path ##########################################
 
@@ -239,10 +239,10 @@ APACHE_DOCUMENT_ROOT=/var/www/
 
 ### MYSQL #################################################
 
-MYSQL_VERSION=latest
-MYSQL_DATABASE=default
-MYSQL_USER=default
-MYSQL_PASSWORD=secret
+MYSQL_VERSION=5.7
+MYSQL_DATABASE=laravel_wather
+MYSQL_USER=laravel_wather
+MYSQL_PASSWORD=123456
 MYSQL_PORT=3306
 MYSQL_ROOT_PASSWORD=root
 MYSQL_ENTRYPOINT_INITDB=./mysql/docker-entrypoint-initdb.d

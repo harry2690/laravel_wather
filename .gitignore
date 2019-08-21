@@ -12,3 +12,7 @@ npm-debug.log
 yarn-error.log
 /docker/.env
 /.idea
+_ide_helper.php
+.phpstorm.meta.php
+.idea
+.DS_Store
