@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Providers;
+
+use App\API\Weather\WeatherApi;
+use App\API\Contracts\Weather\WeatherApiContract;
+use Illuminate\Support\ServiceProvider;
+
+class ApiServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        //
+    }
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton(WeatherApiContract::class, WeatherApi::class);
+    }
+}

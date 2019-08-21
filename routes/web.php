@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/test',function(){
+    $service = app()->make(App\Service\Weather\WeatherService::class);
+    var_dump($service->getWeekWeatherByCity(\App\Support\Enums\City::NEW_TAIPEI));
+});
