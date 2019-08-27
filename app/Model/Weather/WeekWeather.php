@@ -7,6 +7,8 @@ use InvalidArgumentException;
 
 /**
  * @property string $location_name
+ * @property int $geo_code
+ * @property WeatherInfo[] $weather_info_list
  */
 class WeekWeather implements Serializable
 {
@@ -16,6 +18,17 @@ class WeekWeather implements Serializable
     {
         $this->data = $data;
         $this->setLocationName($data['locationName']);
+        $this->setGeoCode($data['geocode']);
+        $weatherInfoList = [];
+        foreach ($data['weatherElement'] as $weatherElement) {
+            if($weatherElement['elementName'] === 'T') {
+                foreach ($weatherElement['time'] as $weatherInfo) {
+                    $weatherInfoList[] = WeatherInfo::denormalize($weatherInfo);
+                }
+                break;
+            }
+        }
+        $this->setWeatherInfoList($weatherInfoList);
     }
 
     /**
@@ -35,12 +48,46 @@ class WeekWeather implements Serializable
     }
 
     /**
+     * @return int
+     */
+    public function getGeoCode(): int
+    {
+        return $this->geo_code;
+    }
+
+    /**
+     * @param int $geo_code
+     */
+    public function setGeoCode(int $geo_code): void
+    {
+        $this->geo_code = $geo_code;
+    }
+
+    /**
+     * @return WeatherInfo[]
+     */
+    public function getWeatherInfoList(): array
+    {
+        return $this->weather_info_list;
+    }
+
+    /**
+     * @param WeatherInfo[] $weather_info_list
+     */
+    public function setWeatherInfoList(array $weather_info_list)
+    {
+        $this->weather_info_list = $weather_info_list;
+    }
+
+    /**
      * @inheritDoc
      */
     public function normalize()
     {
         return [
             'location_name' => $this->getLocationName(),
+            'geo_code' => $this->getGeoCode(),
+            'weather_info_list' => $this->getWeatherInfoList(),
         ];
     }
 

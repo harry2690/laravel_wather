@@ -27,7 +27,8 @@ class WeatherApi extends BasicApi implements WeatherApiContract
     protected function getCustomerHeaders(): array
     {
         return $this->headers = [
-            'Authorization' => config('api.weather.api_key')
+            'Authorization' => config('api.weather.api_key'),
+            'User-Agent'=>'PostmanRuntime/7.15.2',
         ];
     }
 
@@ -41,6 +42,7 @@ class WeatherApi extends BasicApi implements WeatherApiContract
         }
 
         $url = $this->url . WeatherURI::ALL_CITY_WEEK[$cityCode] . "?format={$this->dataType}";
+
         return $this->get($url);
     }
 }

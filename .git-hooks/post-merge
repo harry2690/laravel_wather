@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# Hook for git post-merge
+
+# Update git hooks
+sh bin/update-hooks.sh
+
+# Check node version
+sh bin/check-node-version.sh
+
+# Check the third-party
+# node bin/check-composer-node-library.js
+
+# Migrate database when needed.
+#sh deployment/check-database-migration.sh
+
+# Update nginx,php,mysql,rsyslog when needed.
+#sh deployment/check-config_update.sh

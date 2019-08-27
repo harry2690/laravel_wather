@@ -21,7 +21,6 @@ class WeatherService
     public function getWeekWeatherByCity(string $cityCode)
     {
         $response = $this->weatherApi->getCityWeekInfo($cityCode);
-        var_dump($response);exit;
 
         if (!$this->responseService->isSuccess($response)) {
             return null;

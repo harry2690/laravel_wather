@@ -17,8 +17,13 @@ class ApiResponseService
 
         $data = json_decode($content, true);
 
+        if (!array_key_exists('cwbopendata', $data)) {
+            return false;
+        }
 
-        if (!array_key_exists('success', $data) or !array_key_exists('data', $data)) {
+        $data = $data['cwbopendata'];
+
+        if (!array_key_exists('dataset', $data)) {
             return false;
         }
 
@@ -39,13 +44,11 @@ class ApiResponseService
 
         $content = $response->getContent();
 
-        dd($content);
-
         $data = json_decode($content, true);
 
         foreach ($data['cwbopendata']['dataset']['locations']['location'] as $item) {
-            $weekWeather = WeekWeather::denormalize($item);
-            $result[]    = $weekWeather;
+            $weekWeather                             = WeekWeather::denormalize($item);
+            $result[$weekWeather->getLocationName()] = $weekWeather;
         }
 
         return $result;

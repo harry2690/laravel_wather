@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Check node version
+sh bin/check-node-version.sh
+
+# Check the third-party
+node bin/check-composer-node-library.js
