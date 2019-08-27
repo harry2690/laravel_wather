@@ -18,7 +18,7 @@ class WeatherApi extends BasicApi implements WeatherApiContract
 
     public function __construct(Client $client)
     {
-        $this->url = config('api.weather.api_url');
+        $this->url      = config('api.weather.api_url');
         $this->dataType = WeatherURI::API_TYPE;
 
         parent::__construct($client);
@@ -28,7 +28,7 @@ class WeatherApi extends BasicApi implements WeatherApiContract
     {
         return $this->headers = [
             'Authorization' => config('api.weather.api_key'),
-            'User-Agent'=>'PostmanRuntime/7.15.2',
+            'User-Agent'    => 'PostmanRuntime/7.15.2',
         ];
     }
 
@@ -37,7 +37,7 @@ class WeatherApi extends BasicApi implements WeatherApiContract
      */
     public function getCityWeekInfo(string $cityCode): Response
     {
-        if(!isset(WeatherURI::ALL_CITY_WEEK[$cityCode])){
+        if (!isset(WeatherURI::ALL_CITY_WEEK[$cityCode])) {
             throw new CityNotFoundException($cityCode . ' not found.');
         }
 

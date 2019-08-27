@@ -6,8 +6,8 @@ use App\Support\Contracts\Serializable;
 use InvalidArgumentException;
 
 /**
- * @property string $location_name
- * @property int $geo_code
+ * @property string        $location_name
+ * @property int           $geo_code
  * @property WeatherInfo[] $weather_info_list
  */
 class WeekWeather implements Serializable
@@ -21,7 +21,7 @@ class WeekWeather implements Serializable
         $this->setGeoCode($data['geocode']);
         $weatherInfoList = [];
         foreach ($data['weatherElement'] as $weatherElement) {
-            if($weatherElement['elementName'] === 'T') {
+            if ($weatherElement['elementName'] === 'T') {
                 foreach ($weatherElement['time'] as $weatherInfo) {
                     $weatherInfoList[] = WeatherInfo::denormalize($weatherInfo);
                 }
@@ -85,8 +85,8 @@ class WeekWeather implements Serializable
     public function normalize()
     {
         return [
-            'location_name' => $this->getLocationName(),
-            'geo_code' => $this->getGeoCode(),
+            'location_name'     => $this->getLocationName(),
+            'geo_code'          => $this->getGeoCode(),
             'weather_info_list' => $this->getWeatherInfoList(),
         ];
     }

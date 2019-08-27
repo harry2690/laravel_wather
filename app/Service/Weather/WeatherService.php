@@ -14,8 +14,8 @@ class WeatherService
         WeatherApiContract $weatherApi,
         ApiResponseService $responseService
     ) {
-        $this->weatherApi = $weatherApi;
-        $this->responseService  = $responseService;
+        $this->weatherApi      = $weatherApi;
+        $this->responseService = $responseService;
     }
 
     public function getWeekWeatherByCity(string $cityCode)

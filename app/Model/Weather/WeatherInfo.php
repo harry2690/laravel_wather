@@ -3,13 +3,13 @@
 namespace App\Model\Weather;
 
 use App\Support\Contracts\Serializable;
-use InvalidArgumentException;
 use DateTime;
+use InvalidArgumentException;
 
 /**
  * @property DateTime $start_time
  * @property DateTime $end_time
- * @property int $temperature
+ * @property int      $temperature
  */
 class WeatherInfo implements Serializable
 {
@@ -77,8 +77,8 @@ class WeatherInfo implements Serializable
     public function normalize()
     {
         return [
-            'start_time' => $this->getStartTime(),
-            'end_time' => $this->getEndTime(),
+            'start_time'  => $this->getStartTime(),
+            'end_time'    => $this->getEndTime(),
             'temperature' => $this->getTemperature(),
         ];
     }

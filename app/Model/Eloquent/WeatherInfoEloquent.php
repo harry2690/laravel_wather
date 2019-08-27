@@ -3,8 +3,8 @@
 namespace App\Model\Eloquent;
 
 use App\Contracts\Entity\WeatherInfo;
-use Eloquent;
 use DateTime;
+use Eloquent;
 
 /**
  * @property int      $id

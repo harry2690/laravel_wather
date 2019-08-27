@@ -55,7 +55,7 @@ class UserRepo extends BaseRepo implements UserRepoContract
     public function findCustomers(): Collection
     {
         return UserEloquent::whereHas('roles', function ($query) {
-            /* @var Builder $query*/
+            /* @var Builder $query */
             $query->where('role_id', 3);
         })->get();
     }
@@ -82,7 +82,7 @@ class UserRepo extends BaseRepo implements UserRepoContract
         if (!empty($bag->get('role'))) {
             $role = $bag->get('role');
             $model->whereHas('roles', function ($query) use ($role) {
-                /* @var Builder $query*/
+                /* @var Builder $query */
                 $query->where('name', $role);
             });
         }
@@ -97,7 +97,7 @@ class UserRepo extends BaseRepo implements UserRepoContract
     private function useRole(User $user)
     {
         return UserEloquent::whereHas('roles', function ($query) use ($user) {
-            /* @var Builder $query*/
+            /* @var Builder $query */
             if ($user->isAdmin()) {
                 $query->where('role_id', '<>', 1);
             }

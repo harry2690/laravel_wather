@@ -15,7 +15,7 @@ return [
     |
     */
     'pagination' => [
-        'limit' => 15
+        'limit' => 15,
     ],
 
     /*
@@ -32,7 +32,7 @@ return [
     */
     'fractal'    => [
         'params'     => [
-            'include' => 'include'
+            'include' => 'include',
         ],
         'serializer' => League\Fractal\Serializer\DataArraySerializer::class,
     ],
@@ -106,10 +106,10 @@ return [
                 'create' => true,
                 'update' => true,
                 'delete' => true,
-            ]
+            ],
         ],
 
-        'params'     => [
+        'params'  => [
             /*
             |--------------------------------------------------------------------------
             | Skip Cache Params
@@ -119,7 +119,7 @@ return [
             | Ex: http://prettus.local/?search=lorem&skipCache=true
             |
             */
-            'skipCache' => 'skipCache'
+            'skipCache' => 'skipCache',
         ],
 
         /*
@@ -137,10 +137,10 @@ return [
        |
        | 'except'  =>['find'],
        */
-        'allowed'    => [
+        'allowed' => [
             'only'   => null,
-            'except' => null
-        ]
+            'except' => null,
+        ],
     ],
 
     /*
@@ -169,7 +169,7 @@ return [
         */
         'acceptedConditions' => [
             '=',
-            'like'
+            'like',
         ],
         /*
         |--------------------------------------------------------------------------
@@ -216,8 +216,8 @@ return [
             'orderBy'      => 'orderBy',
             'sortedBy'     => 'sortedBy',
             'with'         => 'with',
-            'searchJoin'   => 'searchJoin'
-        ]
+            'searchJoin'   => 'searchJoin',
+        ],
     ],
     /*
     |--------------------------------------------------------------------------
@@ -225,7 +225,7 @@ return [
     |--------------------------------------------------------------------------
     |
     */
-    'generator' => [
+    'generator'  => [
         'basePath'      => app_path(),
         'rootNamespace' => 'App\\',
         'paths'         => [

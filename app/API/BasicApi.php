@@ -5,9 +5,9 @@ namespace App\API;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;
 use Illuminate\Http\Response;
+use Log;
 use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
-use Log;
 
 abstract class BasicApi
 {
