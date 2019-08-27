@@ -15,7 +15,8 @@
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "league/fractal": "^0.18.0",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "prettus/l5-repository": "^2.6"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",

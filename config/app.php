@@ -231,6 +231,7 @@ return [
         // App Facades
         'SectionInfoRepo' => App\Facades\SectionInfoRepo::class,
         'WeatherInfoRepo' => App\Facades\WeatherInfoRepo::class,
+        'UserRepo'        => App\Facades\UserRepo::class,
     ],
 
 ];

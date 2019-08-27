@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.8.32 on 2019-08-20 15:05:52.
+ * Generated for Laravel 5.8.32 on 2019-08-27 10:23:10.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -14793,6 +14793,2239 @@ namespace Illuminate\Support {
  
 }
 
+namespace App\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class SectionInfoRepo {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function make()
+        {
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->make();
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */ 
+        public static function model()
+        {
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->model();
+        }
+        
+        /**
+         * Boot up the repository, pushing criteria
+         *
+         * @static 
+         */ 
+        public static function boot()
+        {
+            //Method inherited from \App\Repository\BaseRepo            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->boot();
+        }
+        
+        /**
+         * 
+         *
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function resetModel()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->resetModel();
+        }
+        
+        /**
+         * Specify Presenter class name
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function presenter()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->presenter();
+        }
+        
+        /**
+         * Specify Validator class name of Prettus\Validator\Contracts\ValidatorInterface
+         *
+         * @return null 
+         * @throws Exception
+         * @static 
+         */ 
+        public static function validator()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->validator();
+        }
+        
+        /**
+         * Set Presenter
+         *
+         * @param $presenter
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function setPresenter($presenter)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->setPresenter($presenter);
+        }
+        
+        /**
+         * 
+         *
+         * @return \Prettus\Repository\Eloquent\Model 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makeModel()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->makeModel();
+        }
+        
+        /**
+         * 
+         *
+         * @param null $presenter
+         * @return \Prettus\Repository\Eloquent\PresenterInterface 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makePresenter($presenter = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->makePresenter($presenter);
+        }
+        
+        /**
+         * 
+         *
+         * @param null $validator
+         * @return null|\Prettus\Repository\Eloquent\ValidatorInterface 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makeValidator($validator = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->makeValidator($validator);
+        }
+        
+        /**
+         * Get Searchable Fields
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getFieldsSearchable()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->getFieldsSearchable();
+        }
+        
+        /**
+         * Query Scope
+         *
+         * @param \Closure $scope
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function scopeQuery($scope)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->scopeQuery($scope);
+        }
+        
+        /**
+         * Retrieve data array for populate field select
+         *
+         * @param string $column
+         * @param string|null $key
+         * @return \Illuminate\Support\Collection|array 
+         * @static 
+         */ 
+        public static function lists($column, $key = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->lists($column, $key);
+        }
+        
+        /**
+         * Retrieve data array for populate field select
+         * Compatible with Laravel 5.3
+         *
+         * @param string $column
+         * @param string|null $key
+         * @return \Illuminate\Support\Collection|array 
+         * @static 
+         */ 
+        public static function pluck($column, $key = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->pluck($column, $key);
+        }
+        
+        /**
+         * Sync relations
+         *
+         * @param $id
+         * @param $relation
+         * @param $attributes
+         * @param bool $detaching
+         * @return mixed 
+         * @static 
+         */ 
+        public static function sync($id, $relation, $attributes, $detaching = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->sync($id, $relation, $attributes, $detaching);
+        }
+        
+        /**
+         * SyncWithoutDetaching
+         *
+         * @param $id
+         * @param $relation
+         * @param $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function syncWithoutDetaching($id, $relation, $attributes)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->syncWithoutDetaching($id, $relation, $attributes);
+        }
+        
+        /**
+         * Retrieve all data of repository
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function all($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->all($columns);
+        }
+        
+        /**
+         * Alias of All method
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function get($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->get($columns);
+        }
+        
+        /**
+         * Retrieve first data of repository
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function first($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->first($columns);
+        }
+        
+        /**
+         * Retrieve first data of repository, or return new Entity
+         *
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function firstOrNew($attributes = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->firstOrNew($attributes);
+        }
+        
+        /**
+         * Retrieve first data of repository, or create new Entity
+         *
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function firstOrCreate($attributes = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->firstOrCreate($attributes);
+        }
+        
+        /**
+         * Retrieve all data of repository, paginated
+         *
+         * @param null $limit
+         * @param array $columns
+         * @param string $method
+         * @return mixed 
+         * @static 
+         */ 
+        public static function paginate($limit = null, $columns = array(), $method = 'paginate')
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->paginate($limit, $columns, $method);
+        }
+        
+        /**
+         * Retrieve all data of repository, simple paginated
+         *
+         * @param null $limit
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function simplePaginate($limit = null, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->simplePaginate($limit, $columns);
+        }
+        
+        /**
+         * Find data by id
+         *
+         * @param $id
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function find($id, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->find($id, $columns);
+        }
+        
+        /**
+         * Find data by field and value
+         *
+         * @param $field
+         * @param $value
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findByField($field, $value = null, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->findByField($field, $value, $columns);
+        }
+        
+        /**
+         * Find data by multiple fields
+         *
+         * @param array $where
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhere($where, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->findWhere($where, $columns);
+        }
+        
+        /**
+         * Find data by multiple values in one field
+         *
+         * @param $field
+         * @param array $values
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhereIn($field, $values, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->findWhereIn($field, $values, $columns);
+        }
+        
+        /**
+         * Find data by excluding multiple values in one field
+         *
+         * @param $field
+         * @param array $values
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhereNotIn($field, $values, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->findWhereNotIn($field, $values, $columns);
+        }
+        
+        /**
+         * Save a new entity in repository
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function create($attributes)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->create($attributes);
+        }
+        
+        /**
+         * Update a entity in repository by id
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @param $id
+         * @return mixed 
+         * @static 
+         */ 
+        public static function update($attributes, $id)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->update($attributes, $id);
+        }
+        
+        /**
+         * Update or Create an entity in repository
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @param array $values
+         * @return mixed 
+         * @static 
+         */ 
+        public static function updateOrCreate($attributes, $values = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->updateOrCreate($attributes, $values);
+        }
+        
+        /**
+         * Delete a entity in repository by id
+         *
+         * @param $id
+         * @return int 
+         * @static 
+         */ 
+        public static function delete($id)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->delete($id);
+        }
+        
+        /**
+         * Delete multiple entities by given criteria.
+         *
+         * @param array $where
+         * @return int 
+         * @static 
+         */ 
+        public static function deleteWhere($where)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->deleteWhere($where);
+        }
+        
+        /**
+         * Check if entity has relation
+         *
+         * @param string $relation
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function has($relation)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->has($relation);
+        }
+        
+        /**
+         * Load relations
+         *
+         * @param array|string $relations
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function with($relations)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->with($relations);
+        }
+        
+        /**
+         * Add subselect queries to count the relations.
+         *
+         * @param mixed $relations
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function withCount($relations)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->withCount($relations);
+        }
+        
+        /**
+         * Load relation with closure
+         *
+         * @param string $relation
+         * @param \closure $closure
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function whereHas($relation, $closure)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->whereHas($relation, $closure);
+        }
+        
+        /**
+         * Set hidden fields
+         *
+         * @param array $fields
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function hidden($fields)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->hidden($fields);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function orderBy($column, $direction = 'asc')
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->orderBy($column, $direction);
+        }
+        
+        /**
+         * Set visible fields
+         *
+         * @param array $fields
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function visible($fields)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->visible($fields);
+        }
+        
+        /**
+         * Push Criteria for filter the query
+         *
+         * @param $criteria
+         * @return \App\Repository\SectionInfoRepo 
+         * @throws \Prettus\Repository\Exceptions\RepositoryException
+         * @static 
+         */ 
+        public static function pushCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->pushCriteria($criteria);
+        }
+        
+        /**
+         * Pop Criteria
+         *
+         * @param $criteria
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function popCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->popCriteria($criteria);
+        }
+        
+        /**
+         * Get Collection of Criteria
+         *
+         * @return \Prettus\Repository\Eloquent\Collection 
+         * @static 
+         */ 
+        public static function getCriteria()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->getCriteria();
+        }
+        
+        /**
+         * Find data by Criteria
+         *
+         * @param \Prettus\Repository\Eloquent\CriteriaInterface $criteria
+         * @return mixed 
+         * @static 
+         */ 
+        public static function getByCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->getByCriteria($criteria);
+        }
+        
+        /**
+         * Skip Criteria
+         *
+         * @param bool $status
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function skipCriteria($status = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->skipCriteria($status);
+        }
+        
+        /**
+         * Reset all Criterias
+         *
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function resetCriteria()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->resetCriteria();
+        }
+        
+        /**
+         * Reset Query Scope
+         *
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function resetScope()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->resetScope();
+        }
+        
+        /**
+         * Skip Presenter Wrapper
+         *
+         * @param bool $status
+         * @return \App\Repository\SectionInfoRepo 
+         * @static 
+         */ 
+        public static function skipPresenter($status = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->skipPresenter($status);
+        }
+        
+        /**
+         * Wrapper result data
+         *
+         * @param mixed $result
+         * @return mixed 
+         * @static 
+         */ 
+        public static function parserResult($result)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->parserResult($result);
+        }
+        
+        /**
+         * Version compare function that can compare both Laravel and Lumen versions.
+         *
+         * @param string $frameworkVersion
+         * @param string $compareVersion
+         * @param string|null $operator
+         * @return mixed 
+         * @static 
+         */ 
+        public static function versionCompare($frameworkVersion, $compareVersion, $operator = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\SectionInfoRepo $instance */
+                        return $instance->versionCompare($frameworkVersion, $compareVersion, $operator);
+        }
+         
+    }
+
+    /**
+     * 
+     *
+     */ 
+    class WeatherInfoRepo {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function make()
+        {
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->make();
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */ 
+        public static function model()
+        {
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->model();
+        }
+        
+        /**
+         * Boot up the repository, pushing criteria
+         *
+         * @static 
+         */ 
+        public static function boot()
+        {
+            //Method inherited from \App\Repository\BaseRepo            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->boot();
+        }
+        
+        /**
+         * 
+         *
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function resetModel()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->resetModel();
+        }
+        
+        /**
+         * Specify Presenter class name
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function presenter()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->presenter();
+        }
+        
+        /**
+         * Specify Validator class name of Prettus\Validator\Contracts\ValidatorInterface
+         *
+         * @return null 
+         * @throws Exception
+         * @static 
+         */ 
+        public static function validator()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->validator();
+        }
+        
+        /**
+         * Set Presenter
+         *
+         * @param $presenter
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function setPresenter($presenter)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->setPresenter($presenter);
+        }
+        
+        /**
+         * 
+         *
+         * @return \Prettus\Repository\Eloquent\Model 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makeModel()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->makeModel();
+        }
+        
+        /**
+         * 
+         *
+         * @param null $presenter
+         * @return \Prettus\Repository\Eloquent\PresenterInterface 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makePresenter($presenter = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->makePresenter($presenter);
+        }
+        
+        /**
+         * 
+         *
+         * @param null $validator
+         * @return null|\Prettus\Repository\Eloquent\ValidatorInterface 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makeValidator($validator = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->makeValidator($validator);
+        }
+        
+        /**
+         * Get Searchable Fields
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getFieldsSearchable()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->getFieldsSearchable();
+        }
+        
+        /**
+         * Query Scope
+         *
+         * @param \Closure $scope
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function scopeQuery($scope)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->scopeQuery($scope);
+        }
+        
+        /**
+         * Retrieve data array for populate field select
+         *
+         * @param string $column
+         * @param string|null $key
+         * @return \Illuminate\Support\Collection|array 
+         * @static 
+         */ 
+        public static function lists($column, $key = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->lists($column, $key);
+        }
+        
+        /**
+         * Retrieve data array for populate field select
+         * Compatible with Laravel 5.3
+         *
+         * @param string $column
+         * @param string|null $key
+         * @return \Illuminate\Support\Collection|array 
+         * @static 
+         */ 
+        public static function pluck($column, $key = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->pluck($column, $key);
+        }
+        
+        /**
+         * Sync relations
+         *
+         * @param $id
+         * @param $relation
+         * @param $attributes
+         * @param bool $detaching
+         * @return mixed 
+         * @static 
+         */ 
+        public static function sync($id, $relation, $attributes, $detaching = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->sync($id, $relation, $attributes, $detaching);
+        }
+        
+        /**
+         * SyncWithoutDetaching
+         *
+         * @param $id
+         * @param $relation
+         * @param $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function syncWithoutDetaching($id, $relation, $attributes)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->syncWithoutDetaching($id, $relation, $attributes);
+        }
+        
+        /**
+         * Retrieve all data of repository
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function all($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->all($columns);
+        }
+        
+        /**
+         * Alias of All method
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function get($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->get($columns);
+        }
+        
+        /**
+         * Retrieve first data of repository
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function first($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->first($columns);
+        }
+        
+        /**
+         * Retrieve first data of repository, or return new Entity
+         *
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function firstOrNew($attributes = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->firstOrNew($attributes);
+        }
+        
+        /**
+         * Retrieve first data of repository, or create new Entity
+         *
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function firstOrCreate($attributes = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->firstOrCreate($attributes);
+        }
+        
+        /**
+         * Retrieve all data of repository, paginated
+         *
+         * @param null $limit
+         * @param array $columns
+         * @param string $method
+         * @return mixed 
+         * @static 
+         */ 
+        public static function paginate($limit = null, $columns = array(), $method = 'paginate')
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->paginate($limit, $columns, $method);
+        }
+        
+        /**
+         * Retrieve all data of repository, simple paginated
+         *
+         * @param null $limit
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function simplePaginate($limit = null, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->simplePaginate($limit, $columns);
+        }
+        
+        /**
+         * Find data by id
+         *
+         * @param $id
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function find($id, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->find($id, $columns);
+        }
+        
+        /**
+         * Find data by field and value
+         *
+         * @param $field
+         * @param $value
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findByField($field, $value = null, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->findByField($field, $value, $columns);
+        }
+        
+        /**
+         * Find data by multiple fields
+         *
+         * @param array $where
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhere($where, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->findWhere($where, $columns);
+        }
+        
+        /**
+         * Find data by multiple values in one field
+         *
+         * @param $field
+         * @param array $values
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhereIn($field, $values, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->findWhereIn($field, $values, $columns);
+        }
+        
+        /**
+         * Find data by excluding multiple values in one field
+         *
+         * @param $field
+         * @param array $values
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhereNotIn($field, $values, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->findWhereNotIn($field, $values, $columns);
+        }
+        
+        /**
+         * Save a new entity in repository
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function create($attributes)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->create($attributes);
+        }
+        
+        /**
+         * Update a entity in repository by id
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @param $id
+         * @return mixed 
+         * @static 
+         */ 
+        public static function update($attributes, $id)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->update($attributes, $id);
+        }
+        
+        /**
+         * Update or Create an entity in repository
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @param array $values
+         * @return mixed 
+         * @static 
+         */ 
+        public static function updateOrCreate($attributes, $values = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->updateOrCreate($attributes, $values);
+        }
+        
+        /**
+         * Delete a entity in repository by id
+         *
+         * @param $id
+         * @return int 
+         * @static 
+         */ 
+        public static function delete($id)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->delete($id);
+        }
+        
+        /**
+         * Delete multiple entities by given criteria.
+         *
+         * @param array $where
+         * @return int 
+         * @static 
+         */ 
+        public static function deleteWhere($where)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->deleteWhere($where);
+        }
+        
+        /**
+         * Check if entity has relation
+         *
+         * @param string $relation
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function has($relation)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->has($relation);
+        }
+        
+        /**
+         * Load relations
+         *
+         * @param array|string $relations
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function with($relations)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->with($relations);
+        }
+        
+        /**
+         * Add subselect queries to count the relations.
+         *
+         * @param mixed $relations
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function withCount($relations)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->withCount($relations);
+        }
+        
+        /**
+         * Load relation with closure
+         *
+         * @param string $relation
+         * @param \closure $closure
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function whereHas($relation, $closure)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->whereHas($relation, $closure);
+        }
+        
+        /**
+         * Set hidden fields
+         *
+         * @param array $fields
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function hidden($fields)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->hidden($fields);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function orderBy($column, $direction = 'asc')
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->orderBy($column, $direction);
+        }
+        
+        /**
+         * Set visible fields
+         *
+         * @param array $fields
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function visible($fields)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->visible($fields);
+        }
+        
+        /**
+         * Push Criteria for filter the query
+         *
+         * @param $criteria
+         * @return \App\Repository\WeatherInfoRepo 
+         * @throws \Prettus\Repository\Exceptions\RepositoryException
+         * @static 
+         */ 
+        public static function pushCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->pushCriteria($criteria);
+        }
+        
+        /**
+         * Pop Criteria
+         *
+         * @param $criteria
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function popCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->popCriteria($criteria);
+        }
+        
+        /**
+         * Get Collection of Criteria
+         *
+         * @return \Prettus\Repository\Eloquent\Collection 
+         * @static 
+         */ 
+        public static function getCriteria()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->getCriteria();
+        }
+        
+        /**
+         * Find data by Criteria
+         *
+         * @param \Prettus\Repository\Eloquent\CriteriaInterface $criteria
+         * @return mixed 
+         * @static 
+         */ 
+        public static function getByCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->getByCriteria($criteria);
+        }
+        
+        /**
+         * Skip Criteria
+         *
+         * @param bool $status
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function skipCriteria($status = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->skipCriteria($status);
+        }
+        
+        /**
+         * Reset all Criterias
+         *
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function resetCriteria()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->resetCriteria();
+        }
+        
+        /**
+         * Reset Query Scope
+         *
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function resetScope()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->resetScope();
+        }
+        
+        /**
+         * Skip Presenter Wrapper
+         *
+         * @param bool $status
+         * @return \App\Repository\WeatherInfoRepo 
+         * @static 
+         */ 
+        public static function skipPresenter($status = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->skipPresenter($status);
+        }
+        
+        /**
+         * Wrapper result data
+         *
+         * @param mixed $result
+         * @return mixed 
+         * @static 
+         */ 
+        public static function parserResult($result)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->parserResult($result);
+        }
+        
+        /**
+         * Version compare function that can compare both Laravel and Lumen versions.
+         *
+         * @param string $frameworkVersion
+         * @param string $compareVersion
+         * @param string|null $operator
+         * @return mixed 
+         * @static 
+         */ 
+        public static function versionCompare($frameworkVersion, $compareVersion, $operator = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\WeatherInfoRepo $instance */
+                        return $instance->versionCompare($frameworkVersion, $compareVersion, $operator);
+        }
+         
+    }
+
+    /**
+     * 
+     *
+     */ 
+    class UserRepo {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function make()
+        {
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->make();
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */ 
+        public static function model()
+        {
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->model();
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */ 
+        public static function findById($id)
+        {
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findById($id);
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */ 
+        public static function findByPage($user, $limit)
+        {
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findByPage($user, $limit);
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */ 
+        public static function findByEmail($email)
+        {
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findByEmail($email);
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */ 
+        public static function findCustomers()
+        {
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findCustomers();
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */ 
+        public static function findBySearch($bag, $user, $limit)
+        {
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findBySearch($bag, $user, $limit);
+        }
+        
+        /**
+         * Boot up the repository, pushing criteria
+         *
+         * @static 
+         */ 
+        public static function boot()
+        {
+            //Method inherited from \App\Repository\BaseRepo            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->boot();
+        }
+        
+        /**
+         * 
+         *
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function resetModel()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->resetModel();
+        }
+        
+        /**
+         * Specify Presenter class name
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function presenter()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->presenter();
+        }
+        
+        /**
+         * Specify Validator class name of Prettus\Validator\Contracts\ValidatorInterface
+         *
+         * @return null 
+         * @throws Exception
+         * @static 
+         */ 
+        public static function validator()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->validator();
+        }
+        
+        /**
+         * Set Presenter
+         *
+         * @param $presenter
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function setPresenter($presenter)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->setPresenter($presenter);
+        }
+        
+        /**
+         * 
+         *
+         * @return \Prettus\Repository\Eloquent\Model 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makeModel()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->makeModel();
+        }
+        
+        /**
+         * 
+         *
+         * @param null $presenter
+         * @return \Prettus\Repository\Eloquent\PresenterInterface 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makePresenter($presenter = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->makePresenter($presenter);
+        }
+        
+        /**
+         * 
+         *
+         * @param null $validator
+         * @return null|\Prettus\Repository\Eloquent\ValidatorInterface 
+         * @throws RepositoryException
+         * @static 
+         */ 
+        public static function makeValidator($validator = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->makeValidator($validator);
+        }
+        
+        /**
+         * Get Searchable Fields
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getFieldsSearchable()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->getFieldsSearchable();
+        }
+        
+        /**
+         * Query Scope
+         *
+         * @param \Closure $scope
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function scopeQuery($scope)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->scopeQuery($scope);
+        }
+        
+        /**
+         * Retrieve data array for populate field select
+         *
+         * @param string $column
+         * @param string|null $key
+         * @return \Illuminate\Support\Collection|array 
+         * @static 
+         */ 
+        public static function lists($column, $key = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->lists($column, $key);
+        }
+        
+        /**
+         * Retrieve data array for populate field select
+         * Compatible with Laravel 5.3
+         *
+         * @param string $column
+         * @param string|null $key
+         * @return \Illuminate\Support\Collection|array 
+         * @static 
+         */ 
+        public static function pluck($column, $key = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->pluck($column, $key);
+        }
+        
+        /**
+         * Sync relations
+         *
+         * @param $id
+         * @param $relation
+         * @param $attributes
+         * @param bool $detaching
+         * @return mixed 
+         * @static 
+         */ 
+        public static function sync($id, $relation, $attributes, $detaching = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->sync($id, $relation, $attributes, $detaching);
+        }
+        
+        /**
+         * SyncWithoutDetaching
+         *
+         * @param $id
+         * @param $relation
+         * @param $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function syncWithoutDetaching($id, $relation, $attributes)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->syncWithoutDetaching($id, $relation, $attributes);
+        }
+        
+        /**
+         * Retrieve all data of repository
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function all($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->all($columns);
+        }
+        
+        /**
+         * Alias of All method
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function get($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->get($columns);
+        }
+        
+        /**
+         * Retrieve first data of repository
+         *
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function first($columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->first($columns);
+        }
+        
+        /**
+         * Retrieve first data of repository, or return new Entity
+         *
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function firstOrNew($attributes = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->firstOrNew($attributes);
+        }
+        
+        /**
+         * Retrieve first data of repository, or create new Entity
+         *
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function firstOrCreate($attributes = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->firstOrCreate($attributes);
+        }
+        
+        /**
+         * Retrieve all data of repository, paginated
+         *
+         * @param null $limit
+         * @param array $columns
+         * @param string $method
+         * @return mixed 
+         * @static 
+         */ 
+        public static function paginate($limit = null, $columns = array(), $method = 'paginate')
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->paginate($limit, $columns, $method);
+        }
+        
+        /**
+         * Retrieve all data of repository, simple paginated
+         *
+         * @param null $limit
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function simplePaginate($limit = null, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->simplePaginate($limit, $columns);
+        }
+        
+        /**
+         * Find data by id
+         *
+         * @param $id
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function find($id, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->find($id, $columns);
+        }
+        
+        /**
+         * Find data by field and value
+         *
+         * @param $field
+         * @param $value
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findByField($field, $value = null, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findByField($field, $value, $columns);
+        }
+        
+        /**
+         * Find data by multiple fields
+         *
+         * @param array $where
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhere($where, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findWhere($where, $columns);
+        }
+        
+        /**
+         * Find data by multiple values in one field
+         *
+         * @param $field
+         * @param array $values
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhereIn($field, $values, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findWhereIn($field, $values, $columns);
+        }
+        
+        /**
+         * Find data by excluding multiple values in one field
+         *
+         * @param $field
+         * @param array $values
+         * @param array $columns
+         * @return mixed 
+         * @static 
+         */ 
+        public static function findWhereNotIn($field, $values, $columns = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->findWhereNotIn($field, $values, $columns);
+        }
+        
+        /**
+         * Save a new entity in repository
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @return mixed 
+         * @static 
+         */ 
+        public static function create($attributes)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->create($attributes);
+        }
+        
+        /**
+         * Update a entity in repository by id
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @param $id
+         * @return mixed 
+         * @static 
+         */ 
+        public static function update($attributes, $id)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->update($attributes, $id);
+        }
+        
+        /**
+         * Update or Create an entity in repository
+         *
+         * @throws ValidatorException
+         * @param array $attributes
+         * @param array $values
+         * @return mixed 
+         * @static 
+         */ 
+        public static function updateOrCreate($attributes, $values = array())
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->updateOrCreate($attributes, $values);
+        }
+        
+        /**
+         * Delete a entity in repository by id
+         *
+         * @param $id
+         * @return int 
+         * @static 
+         */ 
+        public static function delete($id)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->delete($id);
+        }
+        
+        /**
+         * Delete multiple entities by given criteria.
+         *
+         * @param array $where
+         * @return int 
+         * @static 
+         */ 
+        public static function deleteWhere($where)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->deleteWhere($where);
+        }
+        
+        /**
+         * Check if entity has relation
+         *
+         * @param string $relation
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function has($relation)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->has($relation);
+        }
+        
+        /**
+         * Load relations
+         *
+         * @param array|string $relations
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function with($relations)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->with($relations);
+        }
+        
+        /**
+         * Add subselect queries to count the relations.
+         *
+         * @param mixed $relations
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function withCount($relations)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->withCount($relations);
+        }
+        
+        /**
+         * Load relation with closure
+         *
+         * @param string $relation
+         * @param \closure $closure
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function whereHas($relation, $closure)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->whereHas($relation, $closure);
+        }
+        
+        /**
+         * Set hidden fields
+         *
+         * @param array $fields
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function hidden($fields)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->hidden($fields);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function orderBy($column, $direction = 'asc')
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->orderBy($column, $direction);
+        }
+        
+        /**
+         * Set visible fields
+         *
+         * @param array $fields
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function visible($fields)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->visible($fields);
+        }
+        
+        /**
+         * Push Criteria for filter the query
+         *
+         * @param $criteria
+         * @return \App\Repository\UserRepo 
+         * @throws \Prettus\Repository\Exceptions\RepositoryException
+         * @static 
+         */ 
+        public static function pushCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->pushCriteria($criteria);
+        }
+        
+        /**
+         * Pop Criteria
+         *
+         * @param $criteria
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function popCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->popCriteria($criteria);
+        }
+        
+        /**
+         * Get Collection of Criteria
+         *
+         * @return \Prettus\Repository\Eloquent\Collection 
+         * @static 
+         */ 
+        public static function getCriteria()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->getCriteria();
+        }
+        
+        /**
+         * Find data by Criteria
+         *
+         * @param \Prettus\Repository\Eloquent\CriteriaInterface $criteria
+         * @return mixed 
+         * @static 
+         */ 
+        public static function getByCriteria($criteria)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->getByCriteria($criteria);
+        }
+        
+        /**
+         * Skip Criteria
+         *
+         * @param bool $status
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function skipCriteria($status = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->skipCriteria($status);
+        }
+        
+        /**
+         * Reset all Criterias
+         *
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function resetCriteria()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->resetCriteria();
+        }
+        
+        /**
+         * Reset Query Scope
+         *
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function resetScope()
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->resetScope();
+        }
+        
+        /**
+         * Skip Presenter Wrapper
+         *
+         * @param bool $status
+         * @return \App\Repository\UserRepo 
+         * @static 
+         */ 
+        public static function skipPresenter($status = true)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->skipPresenter($status);
+        }
+        
+        /**
+         * Wrapper result data
+         *
+         * @param mixed $result
+         * @return mixed 
+         * @static 
+         */ 
+        public static function parserResult($result)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->parserResult($result);
+        }
+        
+        /**
+         * Version compare function that can compare both Laravel and Lumen versions.
+         *
+         * @param string $frameworkVersion
+         * @param string $compareVersion
+         * @param string|null $operator
+         * @return mixed 
+         * @static 
+         */ 
+        public static function versionCompare($frameworkVersion, $compareVersion, $operator = null)
+        {
+            //Method inherited from \Prettus\Repository\Eloquent\BaseRepository            
+                        /** @var \App\Repository\UserRepo $instance */
+                        return $instance->versionCompare($frameworkVersion, $compareVersion, $operator);
+        }
+         
+    }
+ 
+}
+
 
 namespace  { 
 
@@ -17575,6 +19808,12 @@ namespace  {
     class Validator extends \Illuminate\Support\Facades\Validator {}
 
     class View extends \Illuminate\Support\Facades\View {}
+
+    class SectionInfoRepo extends \App\Facades\SectionInfoRepo {}
+
+    class WeatherInfoRepo extends \App\Facades\WeatherInfoRepo {}
+
+    class UserRepo extends \App\Facades\UserRepo {}
  
 }
 
